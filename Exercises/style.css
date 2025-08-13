@@ -11,6 +11,10 @@ h2{
     color:brown;
 }
 
+.list{
+    color:pink;
+}
+
 /*TagSelector*/
 #red-point{
     color:red;
@@ -18,8 +22,4 @@ h2{
 
 #brown_point{
     color:brown;
-}
-
-.list{
-    color:pink;
 }

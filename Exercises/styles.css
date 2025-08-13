@@ -1,0 +1,73 @@
+.first-box-container {
+
+    /*for Border*/
+    border-style: solid;
+    border-width: 1ch;
+    border-color: green;
+    /*for text*/
+    color: blue;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 8ch;
+    font-size: large;
+
+    width: 200px;
+
+    height: 100px;
+    position: absolute;
+
+    background-color: red;
+
+}
+
+
+
+.second-box-container {
+    /*for Border*/
+    border-style: solid;
+    border-width: 1ch;
+    border-color: red;
+    /*for text*/
+    color: blue;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 8ch;
+    font-size: large;
+
+    /*for continer*/
+    width: 200px;
+    height: 100px;
+
+    /*left wont take effect if position is not
+    assigned to relative or absolute or others*/
+    position: absolute;
+    left: 250px;
+
+
+    background-color: yellow;
+
+}
+
+
+
+.third-box-container {
+    /*for Border*/
+    border-style: solid;
+    border-width: 1ch;
+    border-color: yellow;
+    /*for text*/
+    color: blue;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 8ch;
+    font-size: large;
+
+    width: 200px;
+
+    height: 100px;
+    position: absolute;
+    left: 500px;
+
+    background-color: green;
+
+}
