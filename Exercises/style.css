@@ -1,0 +1,25 @@
+/*type selector*/
+p{
+    color:red;
+}
+h2{
+    color:brown;
+}
+
+/*Catagory selector*/
+.summer{
+    color:brown;
+}
+
+/*TagSelector*/
+#red-point{
+    color:red;
+}
+
+#brown_point{
+    color:brown;
+}
+
+.list{
+    color:pink;
+}
