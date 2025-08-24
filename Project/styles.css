@@ -23,3 +23,226 @@ a{
     color: var(--link-color);
     text-decoration: none;
 }
+
+/*NAV BAR*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 50px;
+    height: 20px;
+}
+nav .right a{
+    
+    color: var(--text-color);
+    padding : 5px 7px;
+}
+nav .right a:last-child{
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+nav .left a{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+/*Section 1*/
+.Me{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+}
+.Me .text h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.Me .text .links{
+    margin-top: 20px;
+}
+.Me .text .links a{
+    /*to make the icons intact with the links*/
+    display: inline-block;
+    padding: 5px 15px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+}
+.Me .text .links a:hover{
+    color: var(--text-color);
+    border-color: var(--text-color);
+}
+
+/*Flex here is to determine the space each takes in row or column*/
+.Me .text{
+    flex: 5;
+    font-size: 20px;
+}
+.Me .head-shot{
+    flex: 2;
+}
+
+
+.Me .head-shot img{
+    width: 350px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 20px;
+}
+
+/*Section 2*/
+.Skills{
+    padding: 0 40px;
+    margin-bottom: 80px;
+}
+.Skills .text{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.Skills .skillboxes{
+    display: flex;
+    justify-content: center;
+
+    /*flex-wrap is for the skillboxes to change accordingly to the screen size*/
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+.Skills .skillboxes .skillbox img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+.Skills .skillboxes .skillbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+}
+
+/*section 3*/
+.Studies{
+    padding: 0 40px;
+    
+    text-align: center;
+    margin-bottom: 80px;
+}
+.Studies .text{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.Studies .text h2{
+    margin-bottom: 10px;
+}
+
+.Studies .More a{
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+}
+.Studies .More a:hover{
+    color: var(--text-color);
+    border-color: var(--text-color);
+}
+
+
+@media(max-width:875px){
+    /*Section 1*/
+    .Me{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .Me .text p{
+        text-align: center;
+        padding-right: 0;
+    }
+    .Me .head-shot img{
+        width: 250px;
+    }
+}
+
+@media(max-width: 660px){
+
+    /*NAV BAR*/
+    nav{
+        padding:0 20px;
+    }
+    nav .right a span{
+        display: none;
+    }
+    nav .right a{
+        font-size: 22px;
+        margin-right: 18px;
+    }
+    nav .right a:last-child{
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+
+    /*Section1*/
+    .Me {
+        padding: 0 20px;
+        padding-right: 20px;
+    }
+    .Me .text{
+        font-size: 17px;
+    }
+    .Me .text p{
+        margin-top: 20px;
+    }
+    .Me .text h2{
+        font-size: 20px;
+    }
+
+    /*Section 2*/
+    
+    .Skills{
+        padding: 0 20px;
+        margin-bottom: 50px;
+    }
+    .Skills .text{
+        font-size: 17px;
+    }
+    .Skills .text h2{
+        margin-bottom: 10px;
+    }
+    .Skills .skillboxes{
+        gap: 10px;
+    }
+    .Skills .skillboxes .skillbox{
+        padding: 5px 10px;
+        gap: 5px;
+    }
+    .Skills .skillboxes .skillbox img{
+        width: 20px;
+        height: 20px;
+    }
+
+    /*Section 3*/
+    .Studies{
+        padding: 0 20px;
+    }
+    .Studies .text{
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+    .Studies .text h2{
+        margin-bottom: 10px;
+    }
+}
