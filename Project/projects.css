@@ -1,0 +1,156 @@
+:root{
+    --text-color: black;
+    --link-color: blue;
+    --background-color: white;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+}
+
+
+/*Nav*/
+nav .left h2 {
+    padding: 0 40px;
+    font-size: 24px;
+    font-weight: 600;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+nav{
+    margin-bottom: 30px;
+}
+
+nav .right a{
+    color: var(--link-color);
+    text-decoration: none;
+    margin-right: 50px;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: 600;
+    
+    display: flex;
+    align-items: center;
+}
+nav .right a:hover{
+    color: var(--text-color);
+}
+
+/*Sectiion 1
+.Intro {
+    padding: 0 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.Intro .left{
+    flex: 3;
+    padding-right: 20px;
+}
+.Intro .left h1{
+    margin-bottom: 20px;
+}
+.Intro .left p{
+    margin-bottom: 12px;
+}
+.Intro .left ul li{
+    margin-bottom: 10px;
+
+}
+.Intro .right img{
+    flex: 2;
+    border-radius: 5%;
+    object-fit: contain;
+}
+
+
+
+/*Section 2*/
+.Projects {
+    padding: 0 40px;
+}
+.Projects h1{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.Projects .Game-Container .Games {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    align-items: stretch;
+    padding: 10px 0;
+    margin-bottom: 40px;
+}
+
+.Projects .Game-Container .Games .Game {
+    background: #f9f9f9;
+    border: 2px solid #333;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    width: 320px;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    padding: 20px 16px 16px 16px;
+    box-sizing: border-box;
+}
+
+.Projects .Game-Container .Games .Game img{
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+    object-fit: contain;   
+}
+
+/*Section 3*/
+
+.Web-Section {
+    padding: 0 40px
+}
+
+.Web-Section .Web-Container .Websites{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 32px;
+
+}
+.Web-Section .Web-Container .Websites .Website{
+    background: #f9f9f9;
+    border: 2px solid #333;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    width: 320px;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    padding: 20px 16px 16px 16px;
+    box-sizing: border-box;
+}
+
+.Web-Section .Web-Container .Websites .Website img{
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
