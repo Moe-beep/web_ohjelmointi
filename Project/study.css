@@ -20,6 +20,11 @@ nav .left h2 {
     font-size: 24px;
     font-weight: 600;
 }
+
+nav .left{
+    text-align: center;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -46,10 +51,12 @@ nav .right a:hover{
 }
 
 /*Sectiion 1*/
+
 .Intro {
     padding: 0 40px;
     margin-bottom: 40px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 .Intro .left{
@@ -71,15 +78,18 @@ nav .right a:hover{
     border-radius: 5%;
     object-fit: contain;
 }
-.Intro .left .Projects {
+
+/*Section 2*/
+.Projects {
     margin-top: 20px;
+    padding : 0 20px;
 }
-.Intro .left .Projects h2 {
+.Projects h2 {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 12px;
 }
-.Intro .left .Projects a {
+.Projects a {
     color: var(--link-color);
     text-decoration: none;
     font-size: 18px;
@@ -90,7 +100,26 @@ nav .right a:hover{
     display: inline-flex;
     align-items: center;
 }
-.Intro .left .Projects a:hover {
+.Projects a:hover {
     color: var(--text-color);
     border-color: var(--text-color);
+}
+
+/*For smaller screen*/
+
+@media (max-width: 900px) {
+
+    .Intro {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .Intro .left {
+        margin-bottom: 20px;
+    }
+    .Intro .right img {
+        width: 100%;
+        height: auto;
+    }
 }
