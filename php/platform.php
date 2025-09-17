@@ -6,7 +6,7 @@
 
 <body>
     <h1>HTML lomakeharjoitus</h1>
-    <form action="/submission.php">
+    <form action="/<br>submission.php">
         <label for="fname">Lemmikin Nimi:</label><br>
         <input type="text" id="lnimi" name="lnimi"><br>
         <label for="lsyntyn">Lemmikin Syntynmäaika:</label><br>
