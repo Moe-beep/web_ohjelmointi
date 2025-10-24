@@ -19,17 +19,19 @@ $current_page = basename($_SERVER['PHP_SELF']);
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <nav>
     <ul>
         <!--Step through the pages with a foreach statement. Set the class="active" to the <li> element of the current page. Create href links in a loop.  -->
         <?php foreach ($pages as $name => $url): ?>
-            <li class="<?php if ($current_page == $url) echo 'active'; ?>">
+            <li class="<?php if ($current_page == $url)
+                echo 'active'; ?>">
                 <a href="<?php echo $url; ?>"><?php echo $name; ?></a>
             </li>
         <?php endforeach; ?>
     </ul>
 </nav>
-
