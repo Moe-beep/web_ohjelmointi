@@ -1,8 +1,9 @@
 <?php
 $pages = [
     'Food' => 'food.php',
-    'Register' => 'register.php',
-    'Display' => 'display.php',
+    'Exercise' => 'exercise.php',
+    'Contact' => 'contact.php',
+    'Feedback' => 'feedback.php',
 ];
 
 // Get the current page filename

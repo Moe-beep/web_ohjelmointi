@@ -26,8 +26,8 @@
     </header>
     <div class="Thank">
         <h2>Thank You!</h2><br>
-        <h3>Your report has been received.</h3><br>
-        <p>We appreciate your interest and will get back to you shortly.</p><br>
+        <h3>Your feedback has been received.</h3><br>
+        <p>We appreciate your patience and will get back to you shortly.</p><br>
 </body>
 
 </html>
