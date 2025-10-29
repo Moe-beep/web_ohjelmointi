@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <title>Register</title>
+    <title>Thank</title>
 </head>
 
 <body>
@@ -24,18 +24,10 @@
         <!--php include can be added here -->
         <?php include 'navigation1.php'; ?>
     </header>
-    <div class="Register">
-        <h2>Register</h2>
-        <form action="send.php" method="post">
-            <p>Name: <br>
-                <input type="text" name="name">
-            </p>
-            <p>Feedback: <br>
-                <textarea name="message"></textarea>
-            </p>
-            <p><input type="submit" value="Send"></p>
-        </form>
-    </div>
+    <div class="Thank">
+        <h2>Thank You!</h2><br>
+        <h3>Your report has been received.</h3><br>
+        <p>We appreciate your interest and will get back to you shortly.</p><br>
 </body>
 
 </html>
