@@ -29,6 +29,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <nav>
+    <h1 class="nav-title">Health Care with Moe</h1>
     <ul>
         <?php foreach ($pages as $name => $url): ?>
             <li class="<?= ($current_page == $url) ? 'active' : '' ?>">

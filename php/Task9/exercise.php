@@ -2,15 +2,19 @@
 $exercise_categories = [
     'Cardio' => [
         ['name' => 'Running', 'image' => 'images/running.png', 'description' => 'Improves endurance and strengthens your heart.'],
-        ['name' => 'Cycling', 'image' => 'images/cycling.png', 'description' => 'Great for leg muscles and low-impact cardio.']
+        ['name' => 'Cycling', 'image' => 'images/cycling.png', 'description' => 'Great for leg muscles and low-impact cardio.'],
+        ['name' => 'Jump Rope', 'image' => 'images/jumprope.png', 'description' => 'Boosts coordination and burns calories fast.'],
+        ['name' => 'Swimming', 'image' => 'images/swimming.png', 'description' => 'Full-body workout that is easy on joints.']
     ],
     'Strength Training' => [
         ['name' => 'Push-Ups', 'image' => 'images/pushups.png', 'description' => 'Strengthens chest, shoulders, and arms.'],
-        ['name' => 'Squats', 'image' => 'images/squats.png', 'description' => 'Builds leg muscles and improves posture.']
+        ['name' => 'Squats', 'image' => 'images/squats.png', 'description' => 'Builds leg muscles and improves posture.'],
+        ['name' => 'Deadlifts', 'image' => 'images/deadlifts.png', 'description' => 'Great for full-body strength and posture.']
     ],
     'Flexibility' => [
         ['name' => 'Yoga', 'image' => 'images/yoga.png', 'description' => 'Enhances flexibility, balance, and relaxation.'],
-        ['name' => 'Stretching', 'image' => 'images/stretching.png', 'description' => 'Reduces muscle tension and improves range of motion.']
+        ['name' => 'Stretching', 'image' => 'images/stretching.png', 'description' => 'Reduces muscle tension and improves range of motion.'],
+        ['name' => 'Pilates', 'image' => 'images/pilates.png', 'description' => 'Improves core strength and muscle control.']
     ],
 ];
 ?>

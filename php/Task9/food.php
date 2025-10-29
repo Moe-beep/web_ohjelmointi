@@ -2,15 +2,24 @@
 $categories = [
     'Vegetables' => [
         ['name' => 'Carrot', 'image' => 'images/carrot.png', 'description' => 'Rich in vitamin A, good for eyes.'],
-        ['name' => 'Broccoli', 'image' => 'images/broccoli.png', 'description' => 'High in fiber and vitamin C.']
+        ['name' => 'Broccoli', 'image' => 'images/broccoli.png', 'description' => 'High in fiber and vitamin C.'],
+        ['name' => 'Spinach', 'image' => 'images/spinach.png', 'description' => 'Loaded with iron and antioxidants.'],
+        ['name' => 'Tomato', 'image' => 'images/tomato.png', 'description' => 'Rich in vitamin C and lycopene.']
     ],
     'Meat' => [
         ['name' => 'Chicken', 'image' => 'images/chicken.png', 'description' => 'Lean protein, low in fat.'],
-        ['name' => 'Beef', 'image' => 'images/beef.png', 'description' => 'Rich in iron and protein.']
+        ['name' => 'Beef', 'image' => 'images/beef.png', 'description' => 'Rich in iron and protein.'],
+        ['name' => 'Fish', 'image' => 'images/fish.png', 'description' => 'Great source of omega-3 fatty acids.'],
+        ['name' => 'Turkey', 'image' => 'images/turkey.png', 'description' => 'Low-fat protein for muscle recovery.']
     ],
     'Fruits' => [
         ['name' => 'Apple', 'image' => 'images/apple.png', 'description' => 'High in fiber, great for digestion.'],
         ['name' => 'Banana', 'image' => 'images/banana.png', 'description' => 'Rich in potassium.']
+    ],
+    'Grains & Nuts' => [
+        ['name' => 'Oats', 'image' => 'images/oats.png', 'description' => 'Supports heart health and digestion.'],
+        ['name' => 'Almonds', 'image' => 'images/almonds.png', 'description' => 'Rich in healthy fats and protein.'],
+        ['name' => 'Brown Rice', 'image' => 'images/brownrice.png', 'description' => 'Complex carbohydrate for sustained energy.']
     ],
 ];
 ?>
