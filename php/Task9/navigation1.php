@@ -1,5 +1,6 @@
 <?php
 $pages = [
+    'Food' => 'food.php',
     'Register' => 'register.php',
     'Display' => 'display.php',
 ];
