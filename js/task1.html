@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>First JavaScript page</title>
+</head>
+
+<body>
+    <h1>Welcome!</h1>
+    <p id="greetings"></p>
+
+    <button type="button" onclick="Greet()">Hello</button>
+
+    <script>
+        let _name = "Moe";
+        let _age = 20;
+        // Write your JavaScript code here
+            const date = new Date();
+            const year = date.getFullYear();
+            const birthYear = year - _age;
+
+            function Greet(){
+            document.getElementById("greetings").innerHTML = "Hello, " + _name + ". You were born in " + birthYear + ".";
+            }
+        
+    </script>
+</body>
+
+</html>

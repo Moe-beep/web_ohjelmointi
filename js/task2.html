@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Conditional statements and loops</title>
+</head>
+<body>
+    <h1>Task 2</h1>
+    <h2>Multiplication table:</h2>
+    <ul id="numberList"></ul>
+
+    <script>
+        // Write your code here
+
+        //Temp console log
+        let temp = 20;
+
+        if(temp < 0)
+        {
+            console.log("Freezing weather");
+        }
+        else if(temp <=20 && temp>=0 )
+        {
+            console.log("Suitable Outdoor weather");
+        }
+        else if(temp <20){
+            console.log("Hell");
+        }
+
+
+        //Couning 1 to 10
+        const numberList = document.getElementById("numberList");
+        for(let i=1; i<=10; i++){
+            const listItem = document.createElement("li");
+            listItem.textContent = "Number " + i;
+            numberList.appendChild(listItem);
+        }
+
+
+    </script>
+</body>
+</html>
