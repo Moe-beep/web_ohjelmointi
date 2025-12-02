@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Calculator</title>
+</head>
+<body>
+    <label>Hourly wage(€)</label>
+    <input type="text" id = "wage" name="wage" value="0"><br>
+
+    <label >Hours worked(h)</label>
+    <input type="text" id="hours" name="hours" value="0"><br>
+
+    <label>Tax rate(%)</label>
+    <input type="text" id="tax" name="tax" value="0"><br>
+
+    <button onclick="performCalculation()">Calculate</button><br>
+
+    <p>Gross Salary: <span id="gross">-</span></p>
+    <p>Tax amount: <span id="taxAmount">-</span></p>
+    <p>Net Salary: <span id="net">-</span></p>
+
+
+<script>
+    function performCalculation() {
+        
+        // 1. Get elements into variables (document.getElementById)
+        // 2. Save values ​​into variables and convert to numbers (Number() or parseFloat())
+        const wage = parseFloat(document.getElementById("wage").value);
+            const hours = parseFloat(document.getElementById("hours").value);
+            const tax = parseFloat(document.getElementById("tax").value);
+            
+        // 3. Validation (Challenge):
+        // Use an if statement to check whether the numbers are reasonable (e.g. not negative).
+        // If errors -> Print an error message and stop the function (return).
+        if(wage <= 0 || hours <= 0 || tax <= 0){
+            alert("Please enter valid positive numbers for wage, hours, and tax rate.");
+            return;
+        }
+
+        // 4. Calculation formulas:
+        // gross = ...
+        const gross = wage * hours;
+        // tax = ...
+        const taxAmount = gross * (tax / 100);
+        // net = ...
+        const net = gross - taxAmount;
+
+        
+        // 5. Update HTML:
+        document.getElementById("gross").innerText = "€" + gross.toFixed(2);
+        document.getElementById("taxAmount").innerText = "€" + taxAmount.toFixed(2);
+        document.getElementById("net").innerText = "€" + net.toFixed(2);
+        // Make the result box visible.
+        // Place the calculated values ​​in HTML elements.
+
+        // 6. Change style with condition:
+        // if (net < 100) {
+        // change the color of the result text to red
+        // } else {
+        // change the color to green
+        // }
+        if(net < 100){
+            document.getElementById("net").style.color = "red";
+        } else {
+            document.getElementById("net").style.color = "green";
+        }
+    }
+</script>
+</body>
+</html>
