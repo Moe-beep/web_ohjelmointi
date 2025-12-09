@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task5</title>
+</head>
+<body>
+
+    <h2>Car Info</h2>
+    <p id="car"></p>
+    <h2>Car Situation</h2>
+    <p id="situation"></p>
+
+    
+    <script>
+        function car(brand,model,year,running){
+            this.brand = brand;
+            this.model = model;
+            this.year = year;
+            this.running = running;
+
+            this.start = function(){
+                if(this.running){
+                    return this.brand + " " + this.model + " is already running.";
+                }
+                else if(!this.running)
+                {
+                    return this.brand + " " + this.model + " is not running.";
+                }
+            };
+
+            this.info = function(){
+                return this.year + " " + this.brand + " " + this.model ;
+            };
+        }
+        const myCar = new car("Toyota","Corolla",2020,true);
+        document.getElementById("car").innerText = myCar.info();
+        document.getElementById("situation").innerText = myCar.start();
+    </script>
+</body>
+</html>
