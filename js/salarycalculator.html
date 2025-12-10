@@ -4,9 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salary Calculator</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding: 200px 700px;
+        }
+
+        .page{
+            background: wheat;
+            width: 400px;
+            min-height: 650px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        input,
+        button{
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button{
+            margin-top: 20px;
+            background-color: rgb(127, 193, 255);
+            color: rgb(255, 250, 205);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: cadetblue;
+        }
+    </style>
 </head>
 <body>
-    <label>Hourly wage(€)</label>
+    <div class="page">
+        <label>Hourly wage(€)</label>
     <input type="text" id = "wage" name="wage" value="0"><br>
 
     <label >Hours worked(h)</label>
@@ -21,7 +59,8 @@
     <p>Tax amount: <span id="taxAmount">-</span></p>
     <p>Net Salary: <span id="net">-</span></p>
 
-
+    </div>
+    
 <script>
     function performCalculation() {
         
